@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Flash Web Calendar</title>
+<style type="text/css">
+<!--
+.bodytext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.heading {
+	font-size: 24px;
+	font-weight:bold;
+}
+-->
+</style>
+</head>
+
+<body class="bodytext" bgcolor="#999999">
+<center>
+<table width="800px" style="border:1px solid #666666" cellpadding="5"><tr><td align="left" bgcolor="#FFFFFF">
+<p class="heading"><a href="http://www.phpjabbers.com/web-calendar/index.php" target="_blank">Flash Web Calendar </a></p>
+<p>Thank you for buying Flash Web Calendar. If you need some help installing the calendar, please do not hesitate to contact us as at <a href="mailto:info@phpjabbers.com">info@phpjabbers.com</a> and we will be glad to help you. We also do custom modifications and changes to all the <a href="http://www.phpjabbers.com/scripts.php" target="_blank">scripts that we offer</a> on our web site so if you need something different get in touch with us and we will give you a non-obligation quote in less than 12 hours (usually within minutes). </p>
+<p><strong>Installing the calendar: </strong>
+<p>1) as you can see there are 5 files in the zip file
+<li>calendar.swf - this is the actual flash engine </li>
+<li>calendar-install.php - this is the calendar installation file</li>
+<li>calendar-admin.php - php administration file. Using this web page you can manage your web calendar data and settings. </li>
+<li>calendar-data.php - php script to read data from MySQL database and send it to the flash engine </li>
+<li>help.html - the file you are reading now :)</li>
+</p>
+<p>2) before running the installation script you will need to edit the 3 PHP files and set the correct login details. You can edit the files using a plain text editing software such as notepad. At the top of the 3 PHP files you will see: </p>
+<table width="600" border="0" cellspacing="0" cellpadding="5">
+  <tr>
+    <td bgcolor="#CCCCCC"><p>$hostname = 'localhost';<br />
+      $mysql_user='';  <br />
+      $mysql_pass='';<br />
+      $mysql_database=''; </p>
+      </td>
+  </tr>
+</table><br />
+  <li>$hostname = 'localhost'; - this is your MySQL server. Most probably localhost will work but it may also be IP address or valid domain name. </li>
+  <li>$mysql_user=''; - this is the username that you use to connect to your mysql database. </li>
+  <li>$mysql_pass=''; -  this is the password that you use to connect to your mysql database. </li>
+  <li>$mysql_database='';  - this is the database name where the 2 data tables will be created. </li>
+  <p>In case you do not know some of the above data, please contact your hosting provider. Please, note that the user that you will use for the web calendar should have INSERT, SELECT, UPDATE, DELETE, CREATE TABLE permissions. </p>
+  <p>Below these few lines in the calendar-admin.php file you will see the default login details for your web calendar administration page. You can change it to whatever you want. </p>
+  <table width="600" border="0" cellspacing="0" cellpadding="5">
+    <tr>
+      <td bgcolor="#CCCCCC"><p>$admin_username = 'admin'; <br />
+        $admin_password = 'pass';  </p></td>
+    </tr>
+  </table>
+  <p>3) upload the 3 PHP files  and the calendar.swf file in a folder on your web server<br />
+    <br />
+  4) open http://www.yoursite.com/folder/calendar-install.php,  where yoursite.com is the domain name and 'folder' is the folder where you uploaded the files. You will be asked to confirm the login details for your MySQL server. On the next step you will have 2 new database tables for your calendar. </p>
+  <p>5) delete the calendar-install.php file <br />
+      <br />
+    6)  all you have to do now is to login at http://www.yoursite.com/folder/calendar-admin.php and manage your calendar via the administration page </p>
+  <p>Do not forget that we make custom modifications to the Web Calendar product and all the <a href="http://www.phpjabbers.com/scripts.php" target="_blank">scripts that we offer</a>. Send us an email and we will give you a non-obligation quote in less than 12 hours (usually within minutes).</p>
+  <p>&nbsp; </p></td></tr></table>
+</center>
+</body>
+</html>
