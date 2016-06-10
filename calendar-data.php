@@ -1,4 +1,6 @@
 <?
+TOP LINE CHANGED
+
 $hostname = 'localhost';  /////// MySQL server, usually `localhost`. It can also be IP address, or valid domain name
 $mysql_user='calen';  ////////////// username for MySQL server
 $mysql_pass='neil';  ////////////// password for MySQL server
